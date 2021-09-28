@@ -15,6 +15,15 @@
 		A0EB4CC82702151F002C72EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EB4CC62702151F002C72EF /* LaunchScreen.storyboard */; };
 		A0EB4CD32702151F002C72EF /* PermissionProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CD22702151F002C72EF /* PermissionProjectTests.swift */; };
 		A0EB4CDE2702151F002C72EF /* PermissionProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CDD2702151F002C72EF /* PermissionProjectUITests.swift */; };
+		A0EB4CED270215F5002C72EF /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CEC270215F5002C72EF /* ActionButton.swift */; };
+		A0EB4CF22702175C002C72EF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CF12702175C002C72EF /* BaseView.swift */; };
+		A0EB4CF4270217D4002C72EF /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CF3270217D4002C72EF /* GenericBaseView.swift */; };
+		A0EB4CF6270218D4002C72EF /* ActionButtonViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CF5270218D4002C72EF /* ActionButtonViewData.swift */; };
+		A0EB4CF8270218F3002C72EF /* ActionButtonViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CF7270218F3002C72EF /* ActionButtonViewType.swift */; };
+		A0EB4CFA2702190A002C72EF /* ActionButtonViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CF92702190A002C72EF /* ActionButtonViewTheme.swift */; };
+		A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */; };
+		A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0127021AE4002C72EF /* FontManager.swift */; };
+		A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		A0EB4CD92702151F002C72EF /* PermissionProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermissionProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EB4CDD2702151F002C72EF /* PermissionProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionProjectUITests.swift; sourceTree = "<group>"; };
 		A0EB4CDF2702151F002C72EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0EB4CEC270215F5002C72EF /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		A0EB4CF12702175C002C72EF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A0EB4CF3270217D4002C72EF /* GenericBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		A0EB4CF5270218D4002C72EF /* ActionButtonViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewData.swift; sourceTree = "<group>"; };
+		A0EB4CF7270218F3002C72EF /* ActionButtonViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewType.swift; sourceTree = "<group>"; };
+		A0EB4CF92702190A002C72EF /* ActionButtonViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewTheme.swift; sourceTree = "<group>"; };
+		A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		A0EB4D0127021AE4002C72EF /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,10 @@
 		A0EB4CBA2702151E002C72EF /* PermissionProject */ = {
 			isa = PBXGroup;
 			children = (
+				A0EB4CFF27021AD5002C72EF /* Managers */,
+				A0EB4CFB27021972002C72EF /* Utils */,
+				A0EB4CF02702174C002C72EF /* BaseComponents */,
+				A0EB4CEE270216AE002C72EF /* Components */,
 				A0EB4CBB2702151E002C72EF /* AppDelegate.swift */,
 				A0EB4CBD2702151E002C72EF /* SceneDelegate.swift */,
 				A0EB4CBF2702151E002C72EF /* ViewController.swift */,
@@ -126,6 +148,83 @@
 				A0EB4CDF2702151F002C72EF /* Info.plist */,
 			);
 			path = PermissionProjectUITests;
+			sourceTree = "<group>";
+		};
+		A0EB4CEE270216AE002C72EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D0C27034F50002C72EF /* New Group */,
+				A0EB4CEF270216B9002C72EF /* ActionButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A0EB4CEF270216B9002C72EF /* ActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4CEC270215F5002C72EF /* ActionButton.swift */,
+				A0EB4CF5270218D4002C72EF /* ActionButtonViewData.swift */,
+				A0EB4CF7270218F3002C72EF /* ActionButtonViewType.swift */,
+				A0EB4CF92702190A002C72EF /* ActionButtonViewTheme.swift */,
+			);
+			path = ActionButton;
+			sourceTree = "<group>";
+		};
+		A0EB4CF02702174C002C72EF /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4CF12702175C002C72EF /* BaseView.swift */,
+				A0EB4CF3270217D4002C72EF /* GenericBaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		A0EB4CFB27021972002C72EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D0727033851002C72EF /* Extensions */,
+				A0EB4CFC2702197E002C72EF /* GenericProtocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0EB4CFC2702197E002C72EF /* GenericProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */,
+			);
+			path = GenericProtocols;
+			sourceTree = "<group>";
+		};
+		A0EB4CFF27021AD5002C72EF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D0027021AD9002C72EF /* FontManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A0EB4D0027021AD9002C72EF /* FontManager */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D0127021AE4002C72EF /* FontManager.swift */,
+			);
+			path = FontManager;
+			sourceTree = "<group>";
+		};
+		A0EB4D0727033851002C72EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0EB4D0C27034F50002C72EF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +359,16 @@
 			files = (
 				A0EB4CC02702151E002C72EF /* ViewController.swift in Sources */,
 				A0EB4CBC2702151E002C72EF /* AppDelegate.swift in Sources */,
+				A0EB4CF22702175C002C72EF /* BaseView.swift in Sources */,
+				A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */,
 				A0EB4CBE2702151E002C72EF /* SceneDelegate.swift in Sources */,
+				A0EB4CF8270218F3002C72EF /* ActionButtonViewType.swift in Sources */,
+				A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */,
+				A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */,
+				A0EB4CED270215F5002C72EF /* ActionButton.swift in Sources */,
+				A0EB4CF6270218D4002C72EF /* ActionButtonViewData.swift in Sources */,
+				A0EB4CF4270217D4002C72EF /* GenericBaseView.swift in Sources */,
+				A0EB4CFA2702190A002C72EF /* ActionButtonViewTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
