@@ -236,7 +236,7 @@
 				A0EB4D1127035191002C72EF /* InfoViewData.swift */,
 			);
 			path = InfoView;
-			sourceTree = "<group>"
+			sourceTree = "<group>";
 		}
 		A0EB4D0E27035148002C72EF /* ActionButtonModule */ = {
 			isa = PBXGroup;
