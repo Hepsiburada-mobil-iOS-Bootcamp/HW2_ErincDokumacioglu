@@ -153,7 +153,7 @@
 		A0EB4CEE270216AE002C72EF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A0EB4D0C27034F50002C72EF /* New Group */,
+				A0EB4D0E27035148002C72EF /* ActionButtonModule */,
 				A0EB4CEF270216B9002C72EF /* ActionButton */,
 			);
 			path = Components;
@@ -220,11 +220,11 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A0EB4D0C27034F50002C72EF /* New Group */ = {
+		A0EB4D0E27035148002C72EF /* ActionButtonModule */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = ActionButtonModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
