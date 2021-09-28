@@ -24,6 +24,8 @@
 		A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */; };
 		A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0127021AE4002C72EF /* FontManager.swift */; };
 		A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */; };
+		A0EB4D1427035520002C72EF /* ActionButtonModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D1327035520002C72EF /* ActionButtonModule.swift */; };
+		A0EB4D162703553F002C72EF /* ActionButtonModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
 		A0EB4D0127021AE4002C72EF /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A0EB4D1327035520002C72EF /* ActionButtonModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModule.swift; sourceTree = "<group>"; };
+		A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModuleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 		A0EB4D0E27035148002C72EF /* ActionButtonModule */ = {
 			isa = PBXGroup;
 			children = (
+				A0EB4D1327035520002C72EF /* ActionButtonModule.swift */,
+				A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */,
 			);
 			path = ActionButtonModule;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0EB4CC02702151E002C72EF /* ViewController.swift in Sources */,
+				A0EB4D162703553F002C72EF /* ActionButtonModuleData.swift in Sources */,
 				A0EB4CBC2702151E002C72EF /* AppDelegate.swift in Sources */,
 				A0EB4CF22702175C002C72EF /* BaseView.swift in Sources */,
 				A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */,
@@ -365,6 +372,7 @@
 				A0EB4CF8270218F3002C72EF /* ActionButtonViewType.swift in Sources */,
 				A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */,
 				A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */,
+				A0EB4D1427035520002C72EF /* ActionButtonModule.swift in Sources */,
 				A0EB4CED270215F5002C72EF /* ActionButton.swift in Sources */,
 				A0EB4CF6270218D4002C72EF /* ActionButtonViewData.swift in Sources */,
 				A0EB4CF4270217D4002C72EF /* GenericBaseView.swift in Sources */,
