@@ -24,6 +24,8 @@
 		A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */; };
 		A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0127021AE4002C72EF /* FontManager.swift */; };
 		A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */; };
+		A0EB4D1027035178002C72EF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D0F27035178002C72EF /* InfoView.swift */; };
+		A0EB4D1227035191002C72EF /* InfoViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D1127035191002C72EF /* InfoViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		A0EB4CFD27021995002C72EF /* GenericValueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
 		A0EB4D0127021AE4002C72EF /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		A0EB4D0A2703388E002C72EF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A0EB4D0F27035178002C72EF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		A0EB4D1127035191002C72EF /* InfoViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 		A0EB4D0D270350FD002C72EF /* InfoView */ = {
 			isa = PBXGroup;
 			children = (
+				A0EB4D0F27035178002C72EF /* InfoView.swift */,
+				A0EB4D1127035191002C72EF /* InfoViewData.swift */,
 			);
 			path = InfoView;
 			sourceTree = "<group>";
@@ -362,10 +368,12 @@
 				A0EB4CF22702175C002C72EF /* BaseView.swift in Sources */,
 				A0EB4CFE27021995002C72EF /* GenericValueProtocol.swift in Sources */,
 				A0EB4CBE2702151E002C72EF /* SceneDelegate.swift in Sources */,
+				A0EB4D1027035178002C72EF /* InfoView.swift in Sources */,
 				A0EB4CF8270218F3002C72EF /* ActionButtonViewType.swift in Sources */,
 				A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */,
 				A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */,
 				A0EB4CED270215F5002C72EF /* ActionButton.swift in Sources */,
+				A0EB4D1227035191002C72EF /* InfoViewData.swift in Sources */,
 				A0EB4CF6270218D4002C72EF /* ActionButtonViewData.swift in Sources */,
 				A0EB4CF4270217D4002C72EF /* GenericBaseView.swift in Sources */,
 				A0EB4CFA2702190A002C72EF /* ActionButtonViewTheme.swift in Sources */,

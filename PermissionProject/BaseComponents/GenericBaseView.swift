@@ -17,7 +17,7 @@ class GenericBaseView<T>: BaseView {
     public init(frame: CGRect = .zero, data: T?) {
         self.data = data
         super.init(frame: frame)
-
+        loadDataToView()
     }
     
     public required init?(coder: NSCoder) {
