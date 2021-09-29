@@ -28,6 +28,8 @@
 		A0EB4D1227035191002C72EF /* InfoViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D1127035191002C72EF /* InfoViewData.swift */; };
 		A0EB4D1427035520002C72EF /* ActionButtonModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D1327035520002C72EF /* ActionButtonModule.swift */; };
 		A0EB4D162703553F002C72EF /* ActionButtonModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */; };
+		A0EB4D1A270360ED002C72EF /* PermissionRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D19270360ED002C72EF /* PermissionRequestView.swift */; };
+		A0EB4D1C2703610C002C72EF /* PermissionRequestViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB4D1B2703610C002C72EF /* PermissionRequestViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		A0EB4D1127035191002C72EF /* InfoViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewData.swift; sourceTree = "<group>"; };
 		A0EB4D1327035520002C72EF /* ActionButtonModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModule.swift; sourceTree = "<group>"; };
 		A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModuleData.swift; sourceTree = "<group>"; };
+		A0EB4D19270360ED002C72EF /* PermissionRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequestView.swift; sourceTree = "<group>"; };
+		A0EB4D1B2703610C002C72EF /* PermissionRequestViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequestViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 		A0EB4CEE270216AE002C72EF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A0EB4D172703605A002C72EF /* PermissionRequestView */,
 				A0EB4D0E27035148002C72EF /* ActionButtonModule */,
 				A0EB4D0D270350FD002C72EF /* InfoView */,
 				A0EB4CEF270216B9002C72EF /* ActionButton */,
@@ -245,6 +250,15 @@
 				A0EB4D152703553F002C72EF /* ActionButtonModuleData.swift */,
 			);
 			path = ActionButtonModule;
+			sourceTree = "<group>";
+		};
+		A0EB4D172703605A002C72EF /* PermissionRequestView */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB4D19270360ED002C72EF /* PermissionRequestView.swift */,
+				A0EB4D1B2703610C002C72EF /* PermissionRequestViewData.swift */,
+			);
+			path = PermissionRequestView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +400,9 @@
 				A0EB4D1027035178002C72EF /* InfoView.swift in Sources */,
 				A0EB4CF8270218F3002C72EF /* ActionButtonViewType.swift in Sources */,
 				A0EB4D0B2703388E002C72EF /* UIView+Extensions.swift in Sources */,
+				A0EB4D1C2703610C002C72EF /* PermissionRequestViewData.swift in Sources */,
 				A0EB4D0227021AE4002C72EF /* FontManager.swift in Sources */,
+				A0EB4D1A270360ED002C72EF /* PermissionRequestView.swift in Sources */,
 				A0EB4D1427035520002C72EF /* ActionButtonModule.swift in Sources */,
 				A0EB4CED270215F5002C72EF /* ActionButton.swift in Sources */,
 				A0EB4D1227035191002C72EF /* InfoViewData.swift in Sources */,
