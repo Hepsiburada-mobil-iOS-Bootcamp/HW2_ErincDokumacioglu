@@ -19,9 +19,17 @@ class PermissionManagerFactory {
     class func getManager(with type: PermissionType) -> PermissionManagerProtocol {
         switch type {
         case .camera:
-            return photoManager
-        case .photo:
             return cameraManager
+        case .photo:
+            return photoManager
         }
+    }
+    
+    class func getCameraPermissionManager() -> CameraPermissionProtocol {
+        return cameraManager
+    }
+    
+    class func getPhotoPermissionManager() -> PhotosPermissionProtocol {
+        return photoManager
     }
 }

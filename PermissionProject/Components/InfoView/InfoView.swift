@@ -9,7 +9,7 @@ import UIKit
 
 class InfoView: GenericBaseView<InfoViewData> {
     private lazy var stackView: UIStackView = {
-        let temp = UIStackView()
+        let temp = UIStackView(arrangedSubviews: [header, body])
         temp.translatesAutoresizingMaskIntoConstraints = false
         
         temp.isUserInteractionEnabled = true

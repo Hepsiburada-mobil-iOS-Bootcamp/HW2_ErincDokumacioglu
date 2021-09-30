@@ -22,6 +22,7 @@ class CameraPermissionManager: CameraPermissionProtocol {
         print("\(#function) : CameraPermissionManager")
         AVCaptureDevice.requestAccess(for: .video) { granted in
             print("Camera permission granted: \(granted)")
+            completion()
         }
     }
     
@@ -29,10 +30,11 @@ class CameraPermissionManager: CameraPermissionProtocol {
                                       with negativeCompletion: @escaping VoidCompletionBlock
     ) -> PermissionRequestViewData {
         
+        print("requesting view data.")
         return PermissionRequestViewData(actionButtonModuleData: ActionButtonModuleData(
-                                            positiveBtnData: ActionButtonViewData(title: "Grant", type: .filled )
+                                            positiveBtnData: ActionButtonViewData(title: "Grant", type: .filled(.smooth))
                                                 .setActionListener(listener: positiveCompletion),
-                                            negativeBtnData: ActionButtonViewData(title: "Not now", type: .outlined)
+                                            negativeBtnData: ActionButtonViewData(title: "Not now", type: .outlined(.smooth))
                                                 .setActionListener(listener: negativeCompletion)),
                                         infoViewData: InfoViewData(header: "Camera Permission", body: "Please grant permission to us to use the camera."),
                                         image: PermissionImages.camera.value)

@@ -6,6 +6,6 @@
 //
 
 enum ActionButtonViewType {
-    case outlined
-    case filled
+    case outlined(ActionButtonViewTheme)
+    case filled(ActionButtonViewTheme)
 }

@@ -38,8 +38,8 @@ class ActionButtonView: GenericBaseView<ActionButtonViewData> {
         temp.translatesAutoresizingMaskIntoConstraints = false
         
         temp.font = FontManager.bold(14).value
-        temp.textColor = .white
-        temp.text = " "
+        temp.textColor = .black
+        temp.text = "asdasdad"
         temp.contentMode = .center
         temp.textAlignment = .center
         
@@ -48,7 +48,7 @@ class ActionButtonView: GenericBaseView<ActionButtonViewData> {
     
     override func setupViews() {
         super.setupViews()
-        // addTapGesture()
+        addTapGesture()
     }
     
     override func addMajorViewComponents() {
@@ -77,6 +77,22 @@ class ActionButtonView: GenericBaseView<ActionButtonViewData> {
             title.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             title.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
         ])
+    }
+    
+    override func loadDataToView() {
+        super.loadDataToView()
+        guard let data = returnData() else { return }
+        title.text = data.title
+        
+        switch data.type {
+        case .filled(let theme):
+            containerView.backgroundColor = theme.value
+            title.textColor = .white
+        case .outlined(let theme):
+            containerView.layer.borderColor = theme.value.cgColor
+            containerView.layer.borderWidth = 1
+            title.textColor = theme.value
+        }
     }
 }
 

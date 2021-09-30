@@ -28,6 +28,7 @@ class GenericBaseView<T>: BaseView {
     
     func setData(data: T?) {
         self.data = data
+        loadDataToView()
     }
     
     func returnData() -> T? {

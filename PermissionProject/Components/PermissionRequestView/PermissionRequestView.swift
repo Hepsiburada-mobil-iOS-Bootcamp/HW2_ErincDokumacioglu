@@ -91,6 +91,7 @@ class PermissionRequestView: GenericBaseView<PermissionRequestViewData> {
         super.loadDataToView()
         
         guard let data = returnData() else { return }
+        print("In loadDataToView of permission")
         image.image = data.image
         infoView.setData(data: data.infoViewData)
         actionModule.setData(data: data.actionButtonModuleData)

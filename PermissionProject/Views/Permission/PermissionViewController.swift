@@ -20,11 +20,10 @@ class PermissionViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .clear
         
-        
-        addPermissionRequestView()
         dismissViewControllerListener()
+        addPermissionRequestView()
     }
-    
+
     private func addPermissionRequestView() {
         permissionRequestView = PermissionRequestView(data: viewModel.getPermissionRequestViewData())
         permissionRequestView.translatesAutoresizingMaskIntoConstraints = false

@@ -22,8 +22,8 @@ class ActionButtonModule: GenericBaseView<ActionButtonModuleData> {
         let temp = UIStackView(arrangedSubviews: [negativeButton, positiveButton])
         temp.translatesAutoresizingMaskIntoConstraints = false
         
-        temp.axis = .horizontal
         temp.isUserInteractionEnabled = true
+        temp.axis = .horizontal
         temp.alignment = .center
         temp.spacing = 20
         temp.distribution = .fill
@@ -43,6 +43,7 @@ class ActionButtonModule: GenericBaseView<ActionButtonModuleData> {
     
     private lazy var positiveButton: ActionButtonView = {
         let temp = ActionButtonView()
+        temp.translatesAutoresizingMaskIntoConstraints = false
         
         temp.heightAnchor.constraint(equalToConstant: 40).isActive = true
         temp.widthAnchor.constraint(equalToConstant: 150).isActive = true
@@ -65,10 +66,10 @@ class ActionButtonModule: GenericBaseView<ActionButtonModuleData> {
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
             
-            stackView.topAnchor.constraint(equalTo: containerView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            stackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10),
+            stackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10),
+            stackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10),
         ])
     }
     
