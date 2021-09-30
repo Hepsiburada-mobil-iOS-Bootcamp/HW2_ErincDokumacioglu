@@ -30,13 +30,13 @@ class CameraPermissionManager: CameraPermissionProtocol {
                                       with negativeCompletion: @escaping VoidCompletionBlock
     ) -> PermissionRequestViewData {
         
-        print("requesting view data.")
         return PermissionRequestViewData(actionButtonModuleData: ActionButtonModuleData(
-                                            positiveBtnData: ActionButtonViewData(title: "Grant", type: .filled(.smooth))
+                                            positiveBtnData: ActionButtonViewData(title: PermissionLocalizables.grantPermission.value, type: .filled(.smooth))
                                                 .setActionListener(listener: positiveCompletion),
-                                            negativeBtnData: ActionButtonViewData(title: "Not now", type: .outlined(.smooth))
+                                            negativeBtnData: ActionButtonViewData(title: PermissionLocalizables.notNow.value, type: .outlined(.smooth))
                                                 .setActionListener(listener: negativeCompletion)),
-                                        infoViewData: InfoViewData(header: "Camera Permission", body: "Please grant permission to us to use the camera."),
+                                         infoViewData: InfoViewData(header: PermissionLocalizables.cameraPermissionHeader.value,
+                                                                    body: PermissionLocalizables.cameraPermissionBody.value),
                                         image: PermissionImages.camera.value)
     }
 }

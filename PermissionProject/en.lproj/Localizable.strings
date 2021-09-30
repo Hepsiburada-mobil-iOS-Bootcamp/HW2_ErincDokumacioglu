@@ -1,0 +1,19 @@
+/* 
+  Localize.strings
+  PermissionProject
+
+  Created by Erinç Olkan Dokumacıoğlu on 30.09.2021.
+  
+*/
+
+/* Permission Localizables. */
+"cameraPermissionHeader" = "Camera Permisson";
+"cameraPermissionBody" = "Please grant permission to us to use the camera.";
+"photosPermissionHeader" = "Photo Permission";
+"photosPermissionBody" = "Please grant permission to us to access your photos.";
+"grantPermission" = "Grant";
+"notNow" = "Not Now";
+
+/* MainView Localizables */
+"camera" = "Camera";
+"photos" = "Photos";

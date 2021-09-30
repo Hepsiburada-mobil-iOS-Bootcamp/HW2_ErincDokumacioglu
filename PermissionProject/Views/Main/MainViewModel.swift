@@ -20,10 +20,10 @@ class MainViewModel {
     }
     
     func getCameraActionButtonData() -> ActionButtonViewData {
-        return ActionButtonViewData(title: "Camera", type: .filled(.dark))
+        return ActionButtonViewData(title: MainViewLocalizables.camera.value, type: .filled(.dark))
     }
     
     func getPhotoPermissionButtonData() -> ActionButtonViewData {
-        return ActionButtonViewData(title: "Photos", type: .filled(.pretty))
+        return ActionButtonViewData(title: MainViewLocalizables.photos.value, type: .filled(.pretty))
     }
 }

@@ -59,11 +59,12 @@ class PhotosPermissionManager: NSObject, UIImagePickerControllerDelegate, UINavi
                                       with negativeCompletion: @escaping VoidCompletionBlock) -> PermissionRequestViewData {
         
         return PermissionRequestViewData(actionButtonModuleData: ActionButtonModuleData(
-                                            positiveBtnData: ActionButtonViewData(title: "Grant", type: .filled(.bright))
+                                            positiveBtnData: ActionButtonViewData(title: PermissionLocalizables.grantPermission.value, type: .filled(.bright))
                                                 .setActionListener(listener: positiveCompletion),
-                                            negativeBtnData: ActionButtonViewData(title: "Not Now", type: .outlined(.bright))
+                                            negativeBtnData: ActionButtonViewData(title: PermissionLocalizables.notNow.value, type: .outlined(.bright))
                                                 .setActionListener(listener: negativeCompletion)),
-                                         infoViewData: InfoViewData(header: "Photos Permission", body: "Please grant permission to us to access your photos."),
+                                         infoViewData: InfoViewData(header: PermissionLocalizables.photosPermissionHeader.value,
+                                                                    body: PermissionLocalizables.photosPermissionBody.value),
                                          image: PermissionImages.notif.value)
     }
     
